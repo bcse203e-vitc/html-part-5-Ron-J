@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+
+  /* Box Styles */
+  .box {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    padding: 10%; /* Padding in percentage */
+    margin: 5%; /* Margin in percentage */
+    border: 5px solid #3498db; /* Initial border */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  /* Hover Effect */
+  .box:hover {
+    border-width: 10px; /* Change border thickness on hover */
+    border-color: #e74c3c; /* Change border color on hover */
+  }

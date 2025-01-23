@@ -1,0 +1,33 @@
+<!--  Create a styled login form with: 
+o Inputs for email and password, a checkbox for "Remember Me," and a submit 
+button.
+o Style the form to include rounded corners, shadows, and a hover effect on the 
+button.
+o Validate the form fields using CSS pseudo-classes (:valid, :invalid).
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Login Form</title>
+  <link rel="stylesheet" href="styles8.css">
+</head>
+<body>
+  <form class="login-form" action="#" method="post" novalidate>
+    <h2>Login</h2>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email">
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required placeholder="Enter your password">
+    
+    <div class="remember-me">
+      <input type="checkbox" id="remember" name="remember">
+      <label for="remember">Remember Me</label>
+    </div>
+    
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>

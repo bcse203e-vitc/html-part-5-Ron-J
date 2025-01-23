@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  /* Container for the timeline */
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Vertical line */
+  .timeline {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    border-left: 2px solid #3498db;
+    top: 0;
+  }
+
+  /* Timeline events */
+  .event {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  /* Event dot using ::before */
+  .event::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 50%;
+    border: 3px solid white;
+    top: 0;
+  }
+
+  /* Event content styling */
+  .event-content {
+    width: 80%;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Event 1 (customized style) */
+  .event:nth-child(1) .event-content {
+    background-color: #f39c12;
+  }
+
+  .event:nth-child(1) .event::before {
+    background-color: #f39c12;
+  }
+
+  /* Event 2 (customized style) */
+  .event:nth-child(2) .event-content {
+    background-color: #2ecc71;
+  }
+
+  .event:nth-child(2) .event::before {
+    background-color: #2ecc71;
+  }
+
+  /* Event 3 (customized style) */
+  .event:nth-child(3) .event-content {
+    background-color: #e74c3c;
+  }
+
+  .event:nth-child(3) .event::before {
+    background-color: #e74c3c;
+  }
+
+  /* Event 4 (customized style) */
+  .event:nth-child(4) .event-content {
+    background-color: #8e44ad;
+  }
+
+  .event:nth-child(4) .event::before {
+    background-color: #8e44ad;
+  }
+
+  /* Event content text styling */
+  .event-content h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .event-content p {
+    font-size: 16px;
+    color: #fff;
+  } 
